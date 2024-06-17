@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImoveisForYou</title>
+
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+
+    <!-- Compiled and minified CSS -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style_login.css">
+</head>
+
+<body>
+
+    <div class="botaovoltar">
+        <a href="index.html">Voltar</a>
+    </div>
+
+    
+
+    <div class="container login">
+        <h2>Faça seu login</h2>
+        <form id="login">
+            <p id="msg"></p>
+            <label>Email:</label>
+            <input type="email" id="email">
+            <label>Senha:</label>
+            <input type="password" id="senha">
+            <button type="submit" class="botaologin waves-effect waves-light grey">
+                Entrar
+            </button>
+            <a href="cadastro.html" class="linklogin">Ainda não há cadastro?</a>
+        </form>
+    </div>
+
+
+
+    <!-- Jquery e JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <script>
+
+        document.getElementById("login").addEventListener("submit", () => {
+            event.preventDefault();
+
+            const email = document.getElementById("email").value;
+            const senha = document.getElementById("senha").value;
+
+            const resultado = document.getElementById("msg");
+
+            console.log(email);
+            console.log(senha);
+
+            if (email == "" || senha == "") {
+                resultado.innerHTML = `Preencha os campos corretamente!`;
+            }
+
+        });
+
+
+    </script>
+
+</body>
+
+</html>

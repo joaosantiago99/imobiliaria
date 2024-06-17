@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImoveisForYou</title>
+
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+
+    <!-- Compiled and minified CSS -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/style_cadastro.css">
+
+</head>
+
+<body>
+    <div class="botaovoltar">
+        <a href="index.html">Voltar!</a>
+    </div>
+    
+
+    <div class="container cadastro">
+        <h2>Faça seu cadastro</h2>
+        <form id="cadastro">
+            
+            <p id="msg"></p>
+            <label>Email:</label>
+            <input class="inputcadastro" type="email" id="Email" placeholder="Digite seu email">
+            <label>Nome:</label>
+            <input class="inputcadastro" type="text" id="Nome" placeholder="Digite seu nome">
+            <label>Sobrenome:</label>
+            <input class="inputcadastro" type="text" id="Sobrenome" placeholder="Digite seu sobrenome">
+            <label>Senha:</label>
+            <input class="inputcadastro" type="password" id="Senha" placeholder="Digite seu senha">
+            <button type="submit" class="botaocadastro waves-effect waves-light grey">
+                Entrar
+            </button>
+            
+        </form>
+    </div>
+
+
+
+    <!-- Jquery e JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <script>
+
+        document.getElementById("cadastro").addEventListener("submit", () => {
+            event.preventDefault();
+
+            const email = document.getElementById("Email").value;
+            const nome = document.getElementById("Nome").value;
+            const sobrenome = document.getElementById("Sobrenome").value;
+            const senha = document.getElementById("Senha").value;
+
+            const resultado = document.getElementById("msg");
+
+            console.log(email);
+            console.log(senha);
+
+            if (email == "" || senha == "" || sobrenome == "" || nome == "" ) {
+                resultado.innerHTML = `Preencha os campos corretamente!`;
+            }
+
+        });
+
+
+    </script>
+
+</body>
+
+</html>

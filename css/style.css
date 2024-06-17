@@ -1,0 +1,158 @@
+@media only screen and (max-width: 330px) {
+    .link div {
+        width: 250px;
+        /* Reduz o tamanho para quebrar a linha */
+    }
+}
+
+body {
+    text-align: center;
+}
+
+.bt {
+    /* Estilos dos botões */
+    display: inline-block;
+    /* ... outros estilos ... */
+}
+
+nav .brand-logo {
+    display: flex;
+    left: 10px;
+    width: 7%;
+    margin: 5px;
+}
+
+nav .brand-logo img {
+    width: 100%;
+}
+
+nav.nav-extended {
+    height: auto;
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+nav.nav-extended .nav-wrapper {
+    height: 16vh;
+}
+
+.tabs {
+    background-color: #f2f2f2;
+}
+
+.tabs .tab a {
+    color: #000;
+}
+
+.title {
+    position: relative;
+    color: white;
+}
+
+.descricao {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.comodos {
+    width: 50%;
+}
+
+.caracteristicas {
+    width: 50%;
+}
+
+.img-casa {
+    width: 70%;
+}
+
+.img-apto {
+    width: 70%;
+}
+
+
+header {
+    height: 100vh;
+}
+
+.fundo {
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    filter: brightness(0.5);
+}
+
+.fundo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+ul li a {
+    color: #000;
+}
+
+.page-footer {
+    margin-top: 5%;
+    background-color: #f2f2f2;
+}
+
+.casa,
+.terreno {
+    background-color: #f2f2f2;
+}
+
+.casa,
+.apartamento,
+.terreno,
+.campo {
+    padding: 2%;
+}
+
+.login {
+    width: 60%;
+    margin: 0% auto 0;
+    background-color: #f2f2f2;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.botaologin {
+    background-color: #000;
+    color: #000;
+    border: #000;
+    padding: 2% 8%;
+    font-size: 15px;
+    border-radius: 9px;
+}
+
+.botaologin:hover {
+    background-color: #302c2c;
+    transition: all 0.9s;
+    color: #e6dede;
+}
+
+#msg{
+    height: 3vh;
+    font-size: 12px;
+}
+
+.linklogin{
+    display: block;
+    margin-top: 3%;
+}
+
+.botaovoltar {
+    margin-top: 2%;
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center
+}
